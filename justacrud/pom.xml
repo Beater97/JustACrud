@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.justacrud</groupId>
-    <artifactId>maven-jar</artifactId>
+    <artifactId>justacrud</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
