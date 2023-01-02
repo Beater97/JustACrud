@@ -51,10 +51,12 @@ public class Query
 			PreparedStatement ps = db.getConnection().prepareStatement(query);
 			ResultSet tabella = ps.executeQuery();
 			
+			int nColumn = tabella.getMetaData().getColumnCount();
+
 			while (tabella.next())
 			{
 					riga = new LinkedHashMap<>();
-					for (int i = 0; i < tabella.getMetaData().getColumnCount(); i++)
+					for (int i = 0; i < nColumn ; i++)
 					{
 						riga.put(tabella.getMetaData().getColumnName(i+1),
 								tabella.getString(tabella.getMetaData().getColumnName(i+1)));
