@@ -33,6 +33,7 @@ public class Query
 			result = true;
 			map.put("result", result);
 		}
+		
 		catch (Exception e)
 		{
 		}
